@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment2</title>
+</head>
+<body>
+<h1>Ex8</h1>
+
+
+<script>
+    let start = Number(prompt("Start year:"));
+    let end = Number(prompt("End year:"));
+
+
+    document.write("<ul>");
+    for (let y = start; y <= end; y++) {
+        if (y % 4 === 0 && (y % 100 !== 0 || y % 400 === 0)) {
+            document.write("<li>" + y + "</li>");
+        }
+    }
+    document.write("</ul>");
+</script>
+</body>
+</html>
