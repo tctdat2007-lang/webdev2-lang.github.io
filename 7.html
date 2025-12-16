@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment2</title>
+</head>
+<body>
+<h1>Ex7</h1>
+
+<script>
+    let rolls = Number(prompt("Enter number of dice rolls:"));
+    let sum = 0;
+
+    for (let i = 0; i < rolls; i++) {
+        let dice = Math.floor(Math.random() * 6) + 1;
+        sum += dice;
+    }
+
+    document.write("Sum of dice rolls: " + sum);
+</script>
+</body>
+</html>
